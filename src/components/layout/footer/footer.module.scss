@@ -1,0 +1,93 @@
+@use "src/assets/styles/variables";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 40px;
+  padding: 20px;
+  border-top: 1px solid #CCC5C3;
+
+  h4 {
+    font-size: 18px !important;
+    text-align: center !important;
+    font-family: 'Montserrat' !important;
+  }
+
+  @media screen and (min-width: variables.$media_l) {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  @media screen and (min-width: variables.$media_m) {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    max-width: 1200px;
+    align-self: center;
+  }
+
+  @media screen and (min-width: variables.$media_l) {
+    grid-template-columns: 300px 1fr;
+  }
+}
+
+.company {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+
+  h3 {
+    font-size: 20px !important;
+    font-family: 'Montserrat' !important;
+    text-align: center !important;
+  }
+}
+
+.links {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+
+  @media screen and (min-width: variables.$media_m) {
+    width: 500px;
+  }
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  padding: 10px;
+
+  h5 {
+    font-size: 22px !important;
+    text-align: center !important;
+    font-family: 'Montserrat' !important;
+    font-weight: 600 !important;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+  }
+}
+
+.link {
+  color: #272727 !important;
+  font-family: 'Montserrat' !important;
+  padding: 5px 10px;
+  cursor: pointer !important;
+}
