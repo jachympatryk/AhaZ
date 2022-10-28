@@ -1,0 +1,63 @@
+@use "src/assets/styles/variables";
+
+.menuContainer {
+  width: 100%;
+  height: calc(100vh - 80px);
+  max-height: calc(100vh - 80px);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ccc;
+  animation: .5s ease-in openMenu;
+
+  @media screen and (min-width: variables.$media_m) {
+    position: relative;
+    flex-direction: row;
+    background-color: unset;
+    margin-left: 40px;
+  }
+}
+
+.link {
+  width: 50%;
+  height: 30px;
+  text-align: center;
+  line-height: 200%;
+  font-weight: 700;
+  color: #fff;
+
+  @media screen and (min-width: variables.$media_m) {
+    width: auto;
+    color: #000;
+  }
+}
+
+.button {
+  & > * {
+    fill: #000;
+  }
+}
+
+@keyframes openMenu {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+.mobile {
+  @media screen and (min-width: variables.$media_m) {
+    display: none !important;
+  }
+}
+

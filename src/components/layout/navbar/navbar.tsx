@@ -1,7 +1,8 @@
 import React from 'react';
 import { IconButton } from '@mui/material';
 import LocalMallIcon from '@mui/icons-material/LocalMall';
-import MenuIcon from '@mui/icons-material/Menu';
+
+import { BurgerMenu } from 'components';
 
 import { ReactComponent as Logo } from 'assets/icons/logo.svg';
 
@@ -15,9 +16,7 @@ export const Navbar = () => {
         <IconButton className={styles.button}>
           <LocalMallIcon />
         </IconButton>
-        <IconButton className={styles.button}>
-          <MenuIcon />
-        </IconButton>
+        <BurgerMenu />
       </div>
     </div>
   );
