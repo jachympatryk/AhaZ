@@ -10,7 +10,7 @@ import styles from './navbar.module.scss';
 
 export const Navbar = () => {
   return (
-    <div className={styles.container}>
+    <header className={styles.container}>
       <Logo />
       <div className={styles.navigation}>
         <IconButton className={styles.button}>
@@ -18,6 +18,6 @@ export const Navbar = () => {
         </IconButton>
         <BurgerMenu />
       </div>
-    </div>
+    </header>
   );
 };
