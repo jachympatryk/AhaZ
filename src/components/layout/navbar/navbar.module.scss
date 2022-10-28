@@ -13,6 +13,12 @@
   @media screen and (min-width: variables.$media_m) {
     padding: 0 50px;
   }
+
+  @media screen and (min-width: variables.$media_l) {
+    width: 95%;
+    margin: 0 auto;
+    
+  }
 }
 
 .navigation {
