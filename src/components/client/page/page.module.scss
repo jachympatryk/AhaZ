@@ -1,11 +1,12 @@
 .container {
   width: 100%;
   min-height: 100vh;
-  background-color: #F8EDE5;
+  background-color: #f8f8f8;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding-top: 80px;
 }
 
 .content {
