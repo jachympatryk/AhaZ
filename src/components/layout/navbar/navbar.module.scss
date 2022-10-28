@@ -1,3 +1,5 @@
+@use "src/assets/styles/variables";
+
 .container {
   display: flex;
   justify-content: space-between;
@@ -7,6 +9,10 @@
   height: 80px;
   position: relative;
   border-bottom: 1px solid #CCC5C3;
+
+  @media screen and (min-width: variables.$media_m) {
+    padding: 0 50px;
+  }
 }
 
 .navigation {
