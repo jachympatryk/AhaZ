@@ -1,0 +1,23 @@
+@use "src/assets/styles/variables";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.containerItem {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+
+
+  @media screen and (min-width: variables.$media_l) {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    max-width: 1300px;
+  }
+}

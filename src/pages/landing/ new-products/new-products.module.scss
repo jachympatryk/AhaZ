@@ -1,0 +1,51 @@
+@use "src/assets/styles/variables";
+
+.container {
+
+  @media screen and (min-width: variables.$media_l) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  h2, h3 {
+    font-family: 'Montserrat' !important;
+  }
+
+  h2 {
+    font-size: 32px !important;
+    font-weight: 600 !important;
+  }
+
+  h3 {
+    font-size: 20px !important;
+  }
+
+  @media screen and (min-width: variables.$media_l) {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media screen and (min-width: variables.$media_l) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}

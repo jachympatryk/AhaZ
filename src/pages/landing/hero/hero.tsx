@@ -5,10 +5,11 @@ import image1 from 'assets/images/landing-hero-1.webp';
 import image2 from 'assets/images/landing-hero-2.webp';
 
 import styles from './hero.module.scss';
+import mainStyles from '../landing.module.scss';
 
 export const Hero = () => {
   return (
-    <div className={styles.container}>
+    <div className={mainStyles.containerItem}>
       <div className={styles.header}>
         <Typography variant="h1">Elegance is good taste, plus a dash of daring</Typography>
         <Button className={styles.button}>show now</Button>

@@ -1,21 +1,5 @@
 @use "src/assets/styles/variables";
 
-.container {
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-  padding: 20px;
-  max-width: 600px;
-  margin: 0 auto;
-
-
-  @media screen and (min-width: variables.$media_l) {
-    display: grid;
-    grid-template-columns: 300px 1fr;
-    max-width: 1300px;
-  }
-}
-
 .header {
   display: flex;
   flex-direction: column;
@@ -42,9 +26,7 @@
   color: #fff !important;
   font-family: 'Montserrat' !important;
   border: 3px solid #fff !important;
-  -webkit-box-shadow: 0px 0px 16px -4px rgba(66, 68, 90, 1) !important;
-  -moz-box-shadow: 0px 0px 16px -4px rgba(66, 68, 90, 1) !important;
-  box-shadow: 0px 0px 16px -4px rgba(66, 68, 90, 1) !important;
+  box-shadow: variables.$box_shadow !important;
 }
 
 .content {
@@ -75,7 +57,5 @@
 .image {
   width: 100%;
   border: 3px solid white;
-  -webkit-box-shadow: 0px 0px 16px -4px rgba(66, 68, 90, 1);
-  -moz-box-shadow: 0px 0px 16px -4px rgba(66, 68, 90, 1);
-  box-shadow: 0px 0px 16px -4px rgba(66, 68, 90, 1);
+  box-shadow: variables.$box_shadow !important;
 }
