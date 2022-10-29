@@ -1,7 +1,6 @@
 @use "src/assets/styles/variables";
 
 .container {
-
   @media screen and (min-width: variables.$media_l) {
     display: flex;
     flex-direction: column;

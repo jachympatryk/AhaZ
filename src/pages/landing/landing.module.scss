@@ -14,7 +14,6 @@
   max-width: 600px;
   margin: 0 auto;
 
-
   @media screen and (min-width: variables.$media_l) {
     display: grid;
     grid-template-columns: 300px 1fr;

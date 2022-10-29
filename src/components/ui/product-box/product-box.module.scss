@@ -43,6 +43,6 @@
     font-size: 22px !important;
     color: white !important;
     font-weight: 700 !important;
-    text-shadow: 0px 0px 7px rgba(0, 0, 0, 1) !important;
+    text-shadow: variables.$text-shadow;
   }
 }
